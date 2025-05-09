@@ -1,0 +1,20 @@
+{
+  "name": "novus-studio-test",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "run-p dev:server dev:client",
+    "dev:server": "nodemon --ignore 'novus-client' app.js",
+    "dev:client": "cd novus-client && npm run serve",
+    "build": "npm --prefix novus-client install && npm --prefix novus-client run build",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "npm-run-all": "^4.1.5"
+  }
+}
