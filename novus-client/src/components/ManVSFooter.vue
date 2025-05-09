@@ -55,9 +55,9 @@
         <p class="man-vs-footer__copyright man-vs-footer__copyright--miracle">Copyright 2022. Miracle Brand LLC. All rights reserved.</p>
         <div class="man-vs-footer__links">
           <a class="man-vs-footer__link">Privacy Policy</a>
-          <div class="man-vs-footer__separator"></div>
+          <div class="man-vs-footer__separator man-vs-footer__separator-left"></div>
           <a class="man-vs-footer__link">Care Guide</a>
-          <div class="man-vs-footer__separator" style="margin-left: 12px; margin-right: 13px"></div>
+          <div class="man-vs-footer__separator man-vs-footer__separator-right"></div>
           <a class="man-vs-footer__link">Terms of Use</a>
         </div>
       </div>
@@ -171,9 +171,15 @@ export default {
 .man-vs-footer__separator {
   width: 1px;
   height: 10px;
+  background-color: #fff;
+}
+.man-vs-footer__separator-left {
   margin-left: 11px;
   margin-right: 14px;
-  background-color: #fff;
+}
+.man-vs-footer__separator-right {
+  margin-left: 12px;
+  margin-right: 13px;
 }
 .man-vs-footer__column-small:first-child {
   margin-right: 38px;
