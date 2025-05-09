@@ -1,5 +1,5 @@
 <template>
-  <nav class="man-vs-main-menu" aria-label="Main navigation">
+  <nav class="man-vs-main-menu">
     <div class="man-vs-main-menu__logo">
       <ManVSLogo />
     </div>

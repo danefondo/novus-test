@@ -1,14 +1,14 @@
 <template>
   <div class="man-vs-cta-offer-image">
-    <img class="man-vs-cta-offer-image-rays" src="../assets/rays.png" alt="Man VS" />
-    <img class="man-vs-cta-offer-image-sheets" src="../assets/sheets.png" alt="Man VS" />
-    <div class="man-vs-cta-offer-image-pillow-container">
-      <img class="man-vs-cta-offer-image-pillow-big" src="../assets/pillow-big.png" alt="Man VS" />
-      <img class="man-vs-cta-offer-image-pillow-medium" src="../assets/pillow-medium.png" alt="Man VS" />
-      <img class="man-vs-cta-offer-image-pillow-small" src="../assets/pillow-small.png" alt="Man VS" />
-      <div class="man-vs-cta-offer-image-offer-icon">
+    <img class="man-vs-cta-offer-image__rays" src="../assets/rays.png" />
+    <img class="man-vs-cta-offer-image__sheets" src="../assets/sheets.png" />
+    <div class="man-vs-cta-offer-image__pillow-container">
+      <img class="man-vs-cta-offer-image__pillow-big" src="../assets/pillow-big.png" />
+      <img class="man-vs-cta-offer-image__pillow-medium" src="../assets/pillow-medium.png" />
+      <img class="man-vs-cta-offer-image__pillow-small" src="../assets/pillow-small.png" />
+      <div class="man-vs-cta-offer-image__offer-icon">
         <OfferIcon />
-        <div class="man-vs-cta-offer-image-offer-icon-text">+ 3 FREE TOWELS</div>
+        <div class="man-vs-cta-offer-image__offer-icon-text">+ 3 FREE TOWELS</div>
       </div>
     </div>
   </div>
@@ -30,56 +30,56 @@ export default {
   margin-right: 39px;
   margin-top: -13px;
 }
-.man-vs-cta-offer-image-sheets {
+.man-vs-cta-offer-image__sheets {
   position: absolute;
   top: 0.98px;
   left: 13px;
   width: 273.56px;
   height: 188px;
 }
-.man-vs-cta-offer-image-pillow-container {
+.man-vs-cta-offer-image__pillow-container {
   position: absolute;
   top: 94.28px;
   left: 156px;
   width: 174px;
   height: 109.7px;
 }
-.man-vs-cta-offer-image-pillow-big {
+.man-vs-cta-offer-image__pillow-big {
   position: absolute;
   top: 75px;
   left: 0px;
   width: 157.85px;
   height: 33.49px;
 }
-.man-vs-cta-offer-image-pillow-medium {
+.man-vs-cta-offer-image__pillow-medium {
   position: absolute;
   top: 51px;
   left: 14px;
   width: 126.91px;
   height: 26.63px;
 }
-.man-vs-cta-offer-image-pillow-small {
+.man-vs-cta-offer-image__pillow-small {
   position: absolute;
   top: 31px;
   left: 25px;
   width: 101.45px;
   height: 21.35px;
 }
-.man-vs-cta-offer-image-rays {
+.man-vs-cta-offer-image__rays {
   position: absolute;
   top: -17px;
   left: 47px;
   width: 261.94px;
   height: 255.35px;
 }
-.man-vs-cta-offer-image-offer-icon {
+.man-vs-cta-offer-image__offer-icon {
   position: absolute;
   top: -1px;
   left: 98px;
   height: 76px;
   width: 76px;
 }
-.man-vs-cta-offer-image-offer-icon-text {
+.man-vs-cta-offer-image__offer-icon-text {
   height: 30px;
   width: 62px;
   color: black;

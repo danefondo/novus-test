@@ -1,7 +1,7 @@
 <template>
-  <header class="man-vs-header" role="banner" aria-labelledby="main-headline">
+  <header class="man-vs-header">
     <div class="man-vs-header__content">
-      <h1 id="main-headline" class="man-vs-header__title">6 Reasons Tariff-Free Sheets Are The Answer To Your Night Sweats</h1>
+      <h1 class="man-vs-header__title">6 Reasons Tariff-Free Sheets Are The Answer To Your Night Sweats</h1>
       <p class="man-vs-header__description">NASA-inspired cooling, silver-infused freshness—without the luxury price hike.</p>
     </div>
     <div class="man-vs-header__arrow">

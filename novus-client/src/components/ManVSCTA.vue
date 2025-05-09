@@ -3,28 +3,28 @@
     <ManVSCTAOfferImage class="man-vs-cta-offer-image--large-screen" />
     <div class="man-vs-cta__content">
       <h2 class="man-vs-cta__title">TARIFF-FREE COMFORT SALE <span class="man-vs-cta__title-promo">GET 20% OFF NOW</span></h2>
-      <p class="man-vs-cta-contents-text">
+      <p class="man-vs-cta__content-text">
         <span class="darkblue-highlight">Beat the price hikes</span> and sleep better tonight. This <span class="red-highlight">limited time deal</span> is in high demand and stock keeps selling out.
       </p>
       <ManVSCTAOfferImage class="man-vs-cta-offer-image--small-screen" />
-      <button class="man-vs-cta-button">
+      <button class="man-vs-cta__button">
         <CheckIcon />
-        <span class="man-vs-cta-button-text">GET YOUR MIRACLE NOW!</span>
+        <span class="man-vs-cta__button-text">GET YOUR MIRACLE NOW!</span>
       </button>
-      <div class="man-vs-cta-timer">
-        <p class="man-vs-cta-timer-urgency-text">DEAL ENDING IN:</p>
-        <div class="man-vs-cta-timer-urgency-time-container">
-          <p class="man-vs-cta-timer-urgency-time">13:52</p>
+      <div class="man-vs-cta__timer">
+        <p class="man-vs-cta__timer-urgency-text">DEAL ENDING IN:</p>
+        <div class="man-vs-cta__timer-urgency-time-container">
+          <p class="man-vs-cta__timer-urgency-time">13:52</p>
         </div>
       </div>
-      <div class="man-vs-cta-contents-urgency-container">
-        <div class="man-vs-cta-contents-urgency-container-item">
-          <AlertIcon style="margin-top: -3px; margin-right: 4px" />
+      <div class="man-vs-cta__urgency-container">
+        <div class="man-vs-cta__urgency-container-item">
+          <AlertIcon class="man-vs-cta__urgency-alert-icon" />
           <p>Sell-Out Risk:&nbsp;<span class="sell-out-risk-bold">High</span></p>
         </div>
-        <div class="man-vs-cta-separator-line"></div>
-        <div class="man-vs-cta-contents-urgency-container-item">
-          <CarIcon style="margin-top: -5px; margin-right: 10px" />
+        <div class="man-vs-cta__separator-line"></div>
+        <div class="man-vs-cta__urgency-container-item">
+          <CarIcon class="man-vs-cta__urgency-car-icon" />
           <p><span class="free-shipping-bold">FREE</span>&nbsp;shipping</p>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default {
 .man-vs-cta-offer-image--small-screen {
   display: none;
 }
-.man-vs-cta-button {
+.man-vs-cta__button {
   border: 1px solid #15963d;
   border-radius: 6px;
   background: linear-gradient(to bottom, #80ba08, #1d973d);
@@ -82,11 +82,11 @@ export default {
   padding-left: clamp(25px, calc(8.05px + 4.09vw), 67px); /* 25px @414 → 67px @1440 */
   padding-right: clamp(22px, calc(10.7px + 2.73vw), 50px); /* 22px @414 → 50px @1440 */
 }
-.man-vs-cta-button img {
+.man-vs-cta__button img {
   width: 19px;
   height: 13px;
 }
-.man-vs-cta-button-text {
+.man-vs-cta__button-text {
   color: #fff;
   font-family: "Montserrat";
   font-size: clamp(16px, calc(14.38px + 0.39vw), 20px); /* 16 px @ 414 px  →  20 px @ 1440 px */
@@ -103,7 +103,7 @@ export default {
   align-items: center;
   max-width: 417px;
 }
-.man-vs-cta-contents-text {
+.man-vs-cta__content-text {
   width: 381px;
   margin-bottom: 11px;
   font-size: 16px;
@@ -145,7 +145,7 @@ export default {
   font-weight: bold;
   white-space: nowrap;
 }
-.man-vs-cta-contents-urgency-container {
+.man-vs-cta__urgency-container {
   display: flex;
   background-color: #f5f5f5;
   border-radius: 6px;
@@ -158,11 +158,11 @@ export default {
   padding-left: clamp(17px, calc(0.04px + 4.1vw), 59px); /* 17 → 59 */
   padding-right: clamp(14px, calc(-6.18px + 4.87vw), 64px); /* 14 → 64 */
 }
-.man-vs-cta-contents-urgency-container-item {
+.man-vs-cta__urgency-container-item {
   display: flex;
   align-items: center;
 }
-.man-vs-cta-contents-urgency-container-item p {
+.man-vs-cta__urgency-container-item p {
   font-family: "Montserrat";
   display: flex;
   font-weight: 500;
@@ -173,18 +173,18 @@ export default {
   margin-top: -1px;
   white-space: nowrap;
 }
-.man-vs-cta-contents-urgency-container-item img {
+.man-vs-cta__urgency-container-item img {
   width: 21px;
   height: 17px;
 }
-.man-vs-cta-separator-line {
+.man-vs-cta__separator-line {
   width: 1px;
   height: 13px;
   background-color: #012169;
   margin-left: clamp(13px, calc(2.9px + 2.44vw), 38px); /* 13 → 38 */
   margin-right: clamp(29px, calc(27.79px + 0.29vw), 32px); /* 29 → 32 */
 }
-.man-vs-cta-timer-urgency-text {
+.man-vs-cta__timer-urgency-text {
   font-size: 12px;
   font-weight: bold;
   line-height: 20px;
@@ -195,7 +195,7 @@ export default {
   height: 28px;
   margin-bottom: 2px;
 }
-.man-vs-cta-timer-urgency-time {
+.man-vs-cta__timer-urgency-time {
   font-weight: bold;
   font-size: 36px;
   line-height: 20px;
@@ -204,6 +204,18 @@ export default {
   color: #012169;
   height: 28px;
   margin-bottom: 8px;
+}
+.man-vs-cta__urgency-alert-icon {
+  margin-top: -3px;
+  margin-right: 4px;
+  width: 18px;
+  height: 16px;
+}
+.man-vs-cta__urgency-car-icon {
+  margin-top: -5px;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
 }
 @media (max-width: 960px) {
   .man-vs-cta-offer-image--small-screen {
@@ -226,18 +238,18 @@ export default {
     inline-size: 100%;
     margin-inline: auto; /* center it */
   }
-  .man-vs-cta-button {
+  .man-vs-cta__button {
     margin-bottom: 11px;
   }
   .man-vs-cta__title {
     margin-bottom: 15px;
   }
-  .man-vs-cta-timer-urgency-time {
+  .man-vs-cta__timer-urgency-time {
     font-weight: 400;
   }
 }
 @media (max-width: 576px) {
-  .man-vs-cta-contents-text {
+  .man-vs-cta__content-text {
     width: 100%;
     min-width: 271px;
   }
