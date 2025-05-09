@@ -166,7 +166,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 2px;
+  /* margin-right: 2px; */
 }
 .man-vs-footer__separator {
   width: 1px;
