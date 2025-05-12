@@ -5,7 +5,7 @@
       srcset="/images/man-vs-cover-image.avif"
       fetchpriority="high"
       decoding="async"
-      alt="Woman sleeping comfortably under Miracle Made sheets"
+      alt="Woman sleeping comfortably with a happy smile on her face under sheets with a plant next to her"
       class="man-vs-cover__image"
     />
   </div>

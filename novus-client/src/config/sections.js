@@ -7,6 +7,7 @@ export const sections = [
     mobileDescription:
       "Many premium beddings brands source their materials from overseas—then pass import tariffs directly onto you. Miracle Made® Sheets are designed to deliver luxury, cooling, and cleanliness without the markup. You get the same high-end quality (or better), without the government taking a cut.",
     image: require("../assets/man-vs-section-1.webp"),
+    alt: "Tariff price hike sticker on a folded sheet",
     type: "light",
     position: "left",
     content: {
@@ -34,6 +35,7 @@ export const sections = [
     mobileDescription:
       "Our temperature-regulating sheets were inspired by the same materials NASA uses to keep astronauts cool. And thanks to our unique approach to sourcing and manufacturing, you won’t see those savings eaten up by hidden costs or extra duties. Just smarter comfort, built for Earth.",
     image: require("../assets/man-vs-section-2.webp"),
+    alt: "Woman sleeping peacefully under sheets with curvy lines showing the cooling effect of the sheets",
     type: "dark",
     position: "right",
     content: {
@@ -61,6 +63,7 @@ export const sections = [
     mobileDescription:
       "Our silver-infused fibers fight bacteria and odors naturally. That means you can wash less, save more, and feel fresher every night.  Traditional sheets just can’t compete—and every unnecessary wash is money down the drain.",
     image: require("../assets/man-vs-section-3.webp"),
+    alt: "Man adding sheets into a washing machine",
     type: "light",
     position: "left",
     content: {
@@ -88,6 +91,7 @@ export const sections = [
     mobileDescription:
       "Most “luxury” brands aren’t antibacterial. They don’t regulate temperature. And they certainly don’t offer real savings. Miracle Made® Sheets deliver softness, cleanliness, and cooling in one high-tech package—without tariff bloat.",
     image: require("../assets/man-vs-section-4.webp"),
+    alt: "A woman's hands adding final touches to making a bed",
     type: "dark",
     position: "right",
     content: {
@@ -115,6 +119,7 @@ export const sections = [
     mobileDescription:
       "Regular sheets trap bacteria that irritate skin and clog pores. Our silver-infused Miracle Made® Sheets help reduce up to 99.7% of bacteria growth, making them a game-changer for anyone who wants clearer skin and fewer breakouts.",
     image: require("../assets/man-vs-section-5.webp"),
+    alt: "A man with a happy smile cosied up under sheets with his arm under the pillow",
     type: "light",
     position: "left",
     content: {
@@ -142,6 +147,8 @@ export const sections = [
     mobileDescription:
       "No fine print. No hassle. No tariffs. If you don’t love Miracle Made® Sheets after 30 nights of better sleep, we’ll refund every cent. We’re confident you’ll never look at regular sheets the same way again.",
     image: require("../assets/man-vs-section-6.webp"),
+    alt: "A hand holding a mobile phone hinting at a risk free trial, free USA shipping and free returns",
+    mobileAlt: "Happy older woman with a big smile on her face holding the miracle sheet product in her hands",
     type: "dark",
     position: "right",
     content: {

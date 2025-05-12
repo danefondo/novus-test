@@ -56,11 +56,11 @@
         <p class="man-vs-footer__copyright man-vs-footer__copyright--novus">Copyright 2022. Novus Studio LLC. All rights reserved.</p>
         <p class="man-vs-footer__copyright man-vs-footer__copyright--miracle">Copyright 2022. Miracle Brand LLC. All rights reserved.</p>
         <div class="man-vs-footer__links">
-          <a class="man-vs-footer__link">Privacy Policy</a>
+          <a href="#" class="man-vs-footer__link">Privacy Policy</a>
           <div class="man-vs-footer__separator man-vs-footer__separator-left"></div>
-          <a class="man-vs-footer__link">Care Guide</a>
+          <a href="#" class="man-vs-footer__link">Care Guide</a>
           <div class="man-vs-footer__separator man-vs-footer__separator-right"></div>
-          <a class="man-vs-footer__link">Terms of Use</a>
+          <a href="#" class="man-vs-footer__link">Terms of Use</a>
         </div>
       </div>
     </div>

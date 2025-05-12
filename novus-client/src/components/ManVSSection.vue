@@ -7,7 +7,7 @@
       </p>
     </div>
     <div class="man-vs-section__image">
-      <img :src="isMobileOrDesktopImage" alt="Man VS" loading="lazy" />
+      <img :src="isMobileOrDesktopImage" :alt="isMobileOrDesktopImageAlt" loading="lazy" />
     </div>
   </section>
 </template>
@@ -50,6 +50,12 @@ export default {
         return require("../assets/man-vs-section-6-miracle.webp");
       }
       return this.section.image;
+    },
+    isMobileOrDesktopImageAlt() {
+      if (this.index === 5 && this.windowWidth <= 948) {
+        return this.section.mobileAlt;
+      }
+      return this.section.alt;
     },
     sectionStyles() {
       const span = this.maxDesignWidth - this.minDesignWidth;

@@ -1,11 +1,11 @@
 <template>
   <div class="man-vs-cta-offer-image">
-    <img class="man-vs-cta-offer-image__rays" src="../assets/rays.webp" />
-    <img class="man-vs-cta-offer-image__sheets" src="../assets/sheets.webp" />
+    <img alt="" class="man-vs-cta-offer-image__rays" src="../assets/rays.webp" />
+    <img alt="" class="man-vs-cta-offer-image__sheets" src="../assets/sheets.webp" />
     <div class="man-vs-cta-offer-image__pillow-container">
-      <img class="man-vs-cta-offer-image__pillow-big" src="../assets/pillow-big.webp" />
-      <img class="man-vs-cta-offer-image__pillow-medium" src="../assets/pillow-medium.webp" />
-      <img class="man-vs-cta-offer-image__pillow-small" src="../assets/pillow-small.webp" />
+      <img alt="" class="man-vs-cta-offer-image__pillow-big" src="../assets/pillow-big.webp" />
+      <img alt="" class="man-vs-cta-offer-image__pillow-medium" src="../assets/pillow-medium.webp" />
+      <img alt="" class="man-vs-cta-offer-image__pillow-small" src="../assets/pillow-small.webp" />
       <div class="man-vs-cta-offer-image__offer-icon">
         <OfferIcon />
         <div class="man-vs-cta-offer-image__offer-icon-text">+ 3 FREE TOWELS</div>
