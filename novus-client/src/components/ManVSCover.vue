@@ -1,6 +1,6 @@
 <template>
   <div class="man-vs-cover">
-    <img class="man-vs-cover__image" src="../assets/man-vs-cover-image.jpg" alt="Man VS" />
+    <img class="man-vs-cover__image" src="../assets/man-vs-cover-image.webp" alt="Man VS" />
   </div>
 </template>
 

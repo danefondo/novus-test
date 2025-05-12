@@ -8,7 +8,7 @@
       </p>
       <ManVSCTAOfferImage class="man-vs-cta-offer-image--small-screen" />
       <button class="man-vs-cta__button">
-        <CheckIcon />
+        <CheckIcon class="man-vs-cta__check-icon" />
         <span class="man-vs-cta__button-text">GET YOUR MIRACLE NOW!</span>
       </button>
       <div class="man-vs-cta__timer">
@@ -84,7 +84,7 @@ export default {
   padding-right: clamp(22px, calc(10.7px + 2.73vw), 50px); /* 22px @414 → 50px @1440 */
 }
 .man-vs-cta__button:hover {
-    background: linear-gradient(to bottom, #80ba08, #25c04e);
+  background: linear-gradient(to bottom, #80ba08, #25c04e);
 }
 .man-vs-cta__button img {
   width: 19px;
@@ -208,6 +208,10 @@ export default {
   color: #012169;
   height: 28px;
   margin-bottom: 8px;
+}
+.man-vs-cta__check-icon {
+  width: 19px;
+  height: 13px;
 }
 .man-vs-cta__urgency-alert-icon {
   margin-top: -3px;

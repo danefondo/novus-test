@@ -3,7 +3,7 @@
     <ManVSNav />
     <ManVSCover />
     <ManVSHeader />
-    <ManVSSection v-for="(section, index) in sections" :index="index" :key="section.title" :section="section" />
+    <ManVSSection v-for="(section, index) in sections" :index="index" :key="section.id" :section="section" />
     <ManVSCTA />
     <ManVSFooter />
   </div>

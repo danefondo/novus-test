@@ -47,7 +47,7 @@ export default {
     },
     isMobileOrDesktopImage() {
       if (this.index === 5 && this.windowWidth <= 948) {
-        return require("../assets/man-vs-section-6-miracle.png");
+        return require("../assets/man-vs-section-6-miracle.webp");
       }
       return this.section.image;
     },
