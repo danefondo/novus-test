@@ -7,7 +7,8 @@
       </p>
     </div>
     <div class="man-vs-section__image">
-      <img :src="isMobileOrDesktopImage" :alt="isMobileOrDesktopImageAlt" :loading="isLazyOrEagerLoad" />
+      <img v-if="isFirstSectionImage" :src="isMobileOrDesktopImage" :alt="isMobileOrDesktopImageAlt" loading="eager" fetchpriority="high" />
+      <img v-else :src="isMobileOrDesktopImage" :alt="isMobileOrDesktopImageAlt" loading="lazy" />
     </div>
   </section>
 </template>
@@ -58,11 +59,11 @@ export default {
       return this.section.alt;
     },
     /** For first paint speed */
-    isLazyOrEagerLoad() {
+    isFirstSectionImage() {
       if (this.index === 0) {
-        return "eager";
+        return true;
       }
-      return "lazy";
+      return false;
     },
     sectionStyles() {
       const span = this.maxDesignWidth - this.minDesignWidth;
