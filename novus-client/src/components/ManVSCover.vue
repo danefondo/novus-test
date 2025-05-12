@@ -1,6 +1,13 @@
 <template>
   <div class="man-vs-cover">
-    <img class="man-vs-cover__image" src="../assets/man-vs-cover-image.webp" alt="Man VS" />
+    <img
+      src="/images/man-vs-cover-image.avif"
+      srcset="/images/man-vs-cover-image.avif"
+      fetchpriority="high"
+      decoding="async"
+      alt="Woman sleeping comfortably under Miracle Made sheets"
+      class="man-vs-cover__image"
+    />
   </div>
 </template>
 
@@ -13,6 +20,6 @@
   -o-object-fit: cover;
   object-fit: cover;
   object-position: 10% center;
-  height: clamp(227px, /* mobile height */ calc(128.91px + 23.68vw), /* fluid interpolation */ 470px /* desktop height */);
+  height: clamp(227px, calc(128.91px + 23.68vw), 470px);
 }
 </style>
