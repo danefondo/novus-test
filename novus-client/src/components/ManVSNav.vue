@@ -1,6 +1,6 @@
 <template>
-  <nav class="man-vs-main-menu">
-    <div class="man-vs-main-menu__logo">
+  <nav class="man-vs-nav">
+    <div class="man-vs-nav__logo">
       <ManVSLogo />
     </div>
   </nav>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-.man-vs-main-menu {
+.man-vs-nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@ export default {
   padding-top: clamp(17px, calc(19.806px - 0.1948vw), 19px); /* 19px @414 → 17px @1440 */
   padding-bottom: clamp(16px, calc(18.806px - 0.1948vw), 18px); /* 18px @414 → 16px @1440 */
 }
-.man-vs-main-menu__logo {
+.man-vs-nav__logo {
   width: 114px;
   height: 26px;
 }
