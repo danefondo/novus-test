@@ -141,9 +141,8 @@ export default {
   max-width: 100%;
   max-height: 100%;
   width: 100%;
-  /* height: auto; */
   height: 100%;
-  /* object-fit: contain; */
+  object-fit: cover;
   display: block;
 }
 .man-vs-section__content--light {
