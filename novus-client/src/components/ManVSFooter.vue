@@ -170,6 +170,7 @@ export default {
 }
 .man-vs-footer__link {
   cursor: pointer;
+  text-decoration: none;
 }
 .man-vs-footer__links {
   display: flex;
