@@ -7,7 +7,7 @@
       </p>
     </div>
     <div class="man-vs-section__image">
-      <img :src="isMobileOrDesktopImage" :alt="isMobileOrDesktopImageAlt" loading="lazy" />
+      <img :src="isMobileOrDesktopImage" :alt="isMobileOrDesktopImageAlt" :loading="isLazyOrEagerLoad" />
     </div>
   </section>
 </template>
@@ -56,6 +56,13 @@ export default {
         return this.section.mobileAlt;
       }
       return this.section.alt;
+    },
+    /** For first paint speed */
+    isLazyOrEagerLoad() {
+      if (this.index === 0) {
+        return "eager";
+      }
+      return "lazy";
     },
     sectionStyles() {
       const span = this.maxDesignWidth - this.minDesignWidth;
