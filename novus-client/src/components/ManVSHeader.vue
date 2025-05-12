@@ -4,8 +4,8 @@
       <h1 class="man-vs-header__title">6 Reasons Tariff-Free Sheets Are The Answer To Your Night Sweats</h1>
       <p class="man-vs-header__description">NASA-inspired cooling, silver-infused freshness—without the luxury price hike</p>
     </div>
-    <div class="man-vs-header__arrow">
-      <ArrowIcon class="man-vs-header__arrow-icon" />
+    <div class="man-vs-header__arrow-icon">
+      <ArrowIcon />
     </div>
   </header>
 </template>
@@ -54,12 +54,12 @@ export default {
   margin-bottom: clamp(20px, calc(1.14px + 1.657vw), 25px);
   height: 33px;
 }
-.man-vs-header__arrow {
+.man-vs-header__arrow-icon {
   width: 30px;
   height: 18px;
 }
 @media (max-width: 768px) {
-  .man-vs-header__arrow {
+  .man-vs-header__arrow-icon {
     width: 23px;
     height: 14.74px;
   }

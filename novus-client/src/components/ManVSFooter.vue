@@ -31,7 +31,9 @@
         <div class="man-vs-footer__column man-vs-footer__column--right">
           <p class="man-vs-footer__column-title">CUSTOMER SUPPORT</p>
           <div class="man-vs-footer__contact">
-            <EmailIcon class="man-vs-footer__icon" />
+            <div class="man-vs-footer__icon">
+              <EmailIcon />
+            </div>
             <a href="mailto:hello@novus.studio" class="man-vs-footer__email man-vs-footer__email--novus">hello@novus.studio</a>
             <a href="mailto:hello@miraclebrand.co" class="man-vs-footer__email man-vs-footer__email--miracle">hello@miraclebrand.co</a>
           </div>

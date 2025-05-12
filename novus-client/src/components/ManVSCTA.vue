@@ -8,7 +8,9 @@
       </p>
       <ManVSCTAOfferImage class="man-vs-cta-offer-image--small-screen" />
       <button class="man-vs-cta__button">
-        <CheckIcon class="man-vs-cta__check-icon" />
+        <div class="man-vs-cta__check-icon">
+          <CheckIcon />
+        </div>
         <span class="man-vs-cta__button-text">GET YOUR MIRACLE NOW!</span>
       </button>
       <div class="man-vs-cta__timer">
@@ -19,12 +21,16 @@
       </div>
       <div class="man-vs-cta__urgency-container">
         <div class="man-vs-cta__urgency-container-item">
-          <AlertIcon class="man-vs-cta__urgency-alert-icon" />
+          <div class="man-vs-cta__urgency-alert-icon">
+            <AlertIcon />
+          </div>
           <p>Sell-Out Risk:&nbsp;<span class="sell-out-risk-bold">High</span></p>
         </div>
         <div class="man-vs-cta__separator-line"></div>
         <div class="man-vs-cta__urgency-container-item">
-          <CarIcon class="man-vs-cta__urgency-car-icon" />
+          <div class="man-vs-cta__urgency-car-icon">
+            <CarIcon />
+          </div>
           <p><span class="free-shipping-bold">FREE</span>&nbsp;shipping</p>
         </div>
       </div>
@@ -222,7 +228,7 @@ export default {
 .man-vs-cta__urgency-car-icon {
   margin-top: -5px;
   margin-right: 10px;
-  width: 18px;
+  width: 21px;
   height: 18px;
 }
 @media (max-width: 960px) {
@@ -260,6 +266,11 @@ export default {
   .man-vs-cta__content-text {
     width: 100%;
     min-width: 271px;
+  }
+}
+@media (min-width: 1440px) {
+  .man-vs-cta__urgency-container {
+    width: 417px;
   }
 }
 </style>
