@@ -136,7 +136,7 @@ export default {
   letter-spacing: 0px;
   text-decoration: none;
 }
-.man-vs-footer__email--novus:hover {
+.man-vs-footer__email:hover {
   color: #45578d;
 }
 .man-vs-footer__icon {

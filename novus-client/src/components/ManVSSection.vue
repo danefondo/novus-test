@@ -15,14 +15,6 @@
 <script>
 export default {
   props: {
-    maxDesignWidth: {
-      type: Number,
-      default: 1440,
-    },
-    minDesignWidth: {
-      type: Number,
-      default: 414,
-    },
     section: {
       type: Object,
       required: true,
@@ -35,6 +27,8 @@ export default {
   data() {
     return {
       windowWidth: window.innerWidth,
+      minDesignWidth: 414,
+      maxDesignWidth: 1440,
     };
   },
   mounted() {
