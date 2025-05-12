@@ -1,0 +1,6 @@
+# public/robots.txt
+User-agent: *
+Allow: /
+
+# optional but recommended
+Sitemap: https://example.com/sitemap.xml
