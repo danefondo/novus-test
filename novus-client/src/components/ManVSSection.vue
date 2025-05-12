@@ -2,10 +2,12 @@
   <section class="man-vs-section" :class="`man-vs-section--${section.position}`">
     <div class="man-vs-section__content" :class="`man-vs-section__content--${section.type}`" :style="sectionStyles">
       <h2 class="man-vs-section__title">{{ section.title }}</h2>
-      <p class="man-vs-section__description">{{ section.description }}</p>
+      <p class="man-vs-section__description" :style="paragraphStyles">
+        {{ isMobileOrDesktopDescription }}
+      </p>
     </div>
     <div class="man-vs-section__image">
-      <img :src="novusOrMiracleImage" alt="Man VS" loading="lazy" />
+      <img :src="isMobileOrDesktopImage" alt="Man VS" loading="lazy" />
     </div>
   </section>
 </template>
@@ -43,16 +45,19 @@ export default {
     window.removeEventListener("resize", this.updateWindowWidth);
   },
   computed: {
-    novusOrMiracleImage() {
-      /** Show custom imageat 414px to match design */
-      if (this.index === 5 && this.windowWidth <= 414) {
+    isMobileOrDesktopDescription() {
+      if (this.windowWidth <= 948) {
+        return this.section.mobileDescription;
+      }
+      return this.section.description;
+    },
+    isMobileOrDesktopImage() {
+      if (this.index === 5 && this.windowWidth <= 948) {
         return require("../assets/man-vs-section-6-miracle.png");
       }
       return this.section.image;
     },
     sectionStyles() {
-      const { minLeft, maxLeft, minRight, maxRight, minTop, maxTop, minBottom, maxBottom } = this.section;
-
       const span = this.maxDesignWidth - this.minDesignWidth;
 
       const getClamp = (min, max) => {
@@ -65,11 +70,21 @@ export default {
         )`;
       };
 
+      const content = this.section.content;
       return {
-        paddingLeft: getClamp(minLeft, maxLeft),
-        paddingRight: getClamp(minRight, maxRight),
-        paddingTop: getClamp(minTop, maxTop),
-        paddingBottom: getClamp(minBottom, maxBottom),
+        paddingLeft: getClamp(content.paddingMinLeft, content.paddingMaxLeft),
+        paddingRight: getClamp(content.paddingMinRight, content.paddingMaxRight),
+        paddingTop: getClamp(content.paddingMinTop, content.paddingMaxTop),
+        paddingBottom: getClamp(content.paddingMinBottom, content.paddingMaxBottom),
+      };
+    },
+    paragraphStyles() {
+      const { w414, w948, w949, w1440 } = this.section.paragraph;
+      return {
+        "--pw-414": `${w414}px`,
+        "--pw-948": `${w948}px`,
+        "--pw-949": `${w949}px`,
+        "--pw-1440": `${w1440}px`,
       };
     },
   },
@@ -98,7 +113,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   /*   padding: 0px 112px; */
   text-align: left;
 }
@@ -164,6 +179,46 @@ export default {
   .man-vs-section__image {
     width: 100%;
     max-width: 100%;
+  }
+}
+/* 0–413px: small phones, exactly w414 */
+@media (max-width: 413px) {
+  .man-vs-section__description {
+    width: var(--pw-414);
+  }
+}
+
+/* 414–948px: fluid w414→w948 */
+@media (min-width: 414px) and (max-width: 948px) {
+  .man-vs-section__description {
+    width: clamp(var(--pw-414), calc(var(--pw-414) + (100vw - 414px) * ((var(--pw-948) - var(--pw-414)) / (948 - 414))), var(--pw-948));
+  }
+}
+
+/* 949–1440px: fluid w949→w1440 */
+@media (min-width: 949px) and (max-width: 1440px) {
+  .man-vs-section__description {
+    width: clamp(var(--pw-949), calc(var(--pw-949) + (100vw - 949px) * ((var(--pw-1440) - var(--pw-949)) / (1440 - 949))), var(--pw-1440));
+  }
+}
+
+@media (width: 414px) {
+  .man-vs-section__description {
+    width: var(--pw-414);
+  }
+}
+
+@media (width: 1440px) {
+  .man-vs-section__description {
+    width: var(--pw-1440);
+  }
+}
+
+/* 1441px+: no width cap at all */
+@media (min-width: 1441px) {
+  .man-vs-section__description {
+    width: auto;
+    max-width: none;
   }
 }
 </style>

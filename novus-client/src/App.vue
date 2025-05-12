@@ -17,28 +17,6 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
-
-@font-face {
-  font-family: "Brandon Grotesque";
-  src: url("../public/fonts/BrandonGrotesque/Brandon_Grotesque_light.otf") format("opentype");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Brandon Grotesque";
-  src: url("../public/fonts/BrandonGrotesque/Brandon_Grotesque_regular.otf") format("opentype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Brandon Grotesque";
-  src: url("../public/fonts/BrandonGrotesque/Brandon_Grotesque_medium.otf") format("opentype");
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
 /* Thin (100) */
 @font-face {
   font-family: "Brandon Grotesque";

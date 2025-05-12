@@ -68,6 +68,7 @@ export default {
   display: none;
 }
 .man-vs-cta__button {
+  cursor: pointer;
   border: 1px solid #15963d;
   border-radius: 6px;
   background: linear-gradient(to bottom, #80ba08, #1d973d);
@@ -81,6 +82,9 @@ export default {
   height: 56px;
   padding-left: clamp(25px, calc(8.05px + 4.09vw), 67px); /* 25px @414 → 67px @1440 */
   padding-right: clamp(22px, calc(10.7px + 2.73vw), 50px); /* 22px @414 → 50px @1440 */
+}
+.man-vs-cta__button:hover {
+    background: linear-gradient(to bottom, #80ba08, #25c04e);
 }
 .man-vs-cta__button img {
   width: 19px;

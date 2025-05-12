@@ -32,8 +32,8 @@
           <p class="man-vs-footer__column-title">CUSTOMER SUPPORT</p>
           <div class="man-vs-footer__contact">
             <EmailIcon class="man-vs-footer__icon" />
-            <p class="man-vs-footer__email man-vs-footer__email--novus">hello@novus.studio</p>
-            <p class="man-vs-footer__email man-vs-footer__email--miracle">hello@miraclebrand.co</p>
+            <a href="mailto:hello@novus.studio" class="man-vs-footer__email man-vs-footer__email--novus">hello@novus.studio</a>
+            <a href="mailto:hello@miraclebrand.co" class="man-vs-footer__email man-vs-footer__email--miracle">hello@miraclebrand.co</a>
           </div>
         </div>
       </div>
@@ -134,6 +134,10 @@ export default {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0px;
+  text-decoration: none;
+}
+.man-vs-footer__email--novus:hover {
+  color: #45578d;
 }
 .man-vs-footer__icon {
   height: 20px;
@@ -161,6 +165,9 @@ export default {
   color: #00207d;
   font-weight: 400;
   line-height: 22px;
+}
+.man-vs-footer__link {
+  cursor: pointer;
 }
 .man-vs-footer__links {
   display: flex;
@@ -252,7 +259,7 @@ export default {
 .man-vs-footer__column-title--miracle {
   display: none;
 }
-@media (max-width: 414px) {
+@media (max-width: 948px) {
   .man-vs-footer__copyright--novus {
     display: none;
   }
