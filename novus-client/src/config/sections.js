@@ -1,4 +1,4 @@
-const PUBLIC = process.env.BASE_URL || '/'
+const PUBLIC = process.env.BASE_URL || "/";
 
 export const sections = [
   {
@@ -8,7 +8,7 @@ export const sections = [
       "Many premium beddings brands source their materials from overseas—then pass import tariffs directly onto you. Our premium Sheets are designed to deliver luxury, cooling, and cleanliness without the markup. You get the same high-end quality (or better), without the government taking a cut.",
     mobileDescription:
       "Many premium beddings brands source their materials from overseas—then pass import tariffs directly onto you. Miracle Made® Sheets are designed to deliver luxury, cooling, and cleanliness without the markup. You get the same high-end quality (or better), without the government taking a cut.",
-    image: require(`${PUBLIC}images/man-vs-section-1.avif`),
+    image: `${PUBLIC}images/man-vs-section-1.avif`,
     alt: "Tariff price hike sticker on a folded sheet",
     type: "light",
     position: "left",
