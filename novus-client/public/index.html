@@ -14,13 +14,10 @@
 
     <link rel="preload" as="image" href="<%= BASE_URL %>images/man-vs-cover-image.avif" type="image/avif" fetchpriority="high" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" media="print" onload="this.media='all'" />
 
-    <link rel="stylesheet" href="<%= BASE_URL %>styles/fonts.css" />
+    <link rel="preload" as="style" href="<%= BASE_URL %>styles/fonts.css" />
+    <link rel="stylesheet" href="<%= BASE_URL %>styles/fonts.css" media="print" onload="this.media='all'" />
   </head>
   <body>
     <noscript>
@@ -28,5 +25,9 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
+    </noscript>
   </body>
 </html>
